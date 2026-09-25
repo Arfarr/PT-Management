@@ -1,0 +1,30 @@
+# Gradle / Android 构建产物
+build/
+.gradle/
+.gradle
+*.apk
+*.aab
+!gradle-wrapper.jar
+
+# 本机环境（含 SDK 路径 / 密钥，严禁上传）
+local.properties
+*.properties
+!gradle.properties
+
+# IDE
+.idea/
+*.iml
+.vscode/
+captures/
+
+# Kotlin 编译错误快照
+.kotlin/
+
+# 系统/临时
+.DS_Store
+*.log
+
+# keystore / 签名文件
+*.jks
+*.keystore
+keystore/
