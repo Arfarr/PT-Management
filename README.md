@@ -49,6 +49,14 @@ app/src/main/java/com/ptmanager/
 └── util/          # 格式化工具
 ```
 
+## 自动构建（GitHub Actions）
+
+仓库已内置 `/.github/workflows/android-ci.yml`：
+- **打标签 `v*`** 或 **手动触发**（Actions 页 Run workflow）即自动 `assembleDebug` 并上传 APK 产物。
+- 产物可在 **Actions → 对应运行 → Artifacts** 下载。
+- 云端构建走官方 `sdk.dir=$ANDROID_HOME`，不依赖本机 `local.properties`（已被 .gitignore 排除）。
+
+
 ## 许可
 
 仅本人使用与学习研究。禁止用于商业用途。
